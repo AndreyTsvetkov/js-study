@@ -18,5 +18,13 @@ function solution(first, second, third) {
 var a = parseFloat(window.prompt('чему равен коэффициент а'));
 var b = parseFloat(window.prompt('чему равен коэффициент b'));
 var c = parseFloat(window.prompt('чему равен коэффициент c'));
-var resultList = solution(a, b, c)
-console.log(resultList);
+var resultList = solution(a, b, c);
+if (resultList[0] === undefined && resultList[1] === undefined) {
+	console.log(resultList[2]);
+}
+else if (resultList[2] === undefined) {
+	console.log(resultList[0] + ', ' + resultList[1]);
+}
+else {
+	console.log(resultList);	
+} 
