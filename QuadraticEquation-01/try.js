@@ -12,7 +12,7 @@ function solve(first, second, third) {
 		return [x3];
 	}
 	else {
-		return 'нет решений!';
+		return '';
 	};
 };
 
